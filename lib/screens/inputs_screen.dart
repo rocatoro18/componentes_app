@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:componentes_app/widgets/custom_input_field.dart';
 
 class InputsScreen extends StatelessWidget {
   const InputsScreen({Key? key}) : super(key: key);
@@ -12,14 +13,10 @@ class InputsScreen extends StatelessWidget {
       body: SingleChildScrollView(
           child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              child: Column(children: [
-                TextFormField(
-                  autofocus: true,
-                  initialValue: '',
-                  textCapitalization: TextCapitalization.words,
-                  onChanged: (value) {
-                    print('value: $value');
-                  },
+              child: Column(children: const [
+                CustomInputField(
+                  labelText: 'Nombre',
+                  hintText: 'Nombre del usuario',
                 )
               ]))),
     );
