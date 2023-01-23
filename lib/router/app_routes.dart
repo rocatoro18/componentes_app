@@ -1,5 +1,6 @@
 import 'package:componentes_app/models/models.dart';
 import 'package:componentes_app/screens/screens.dart';
+
 import 'package:flutter/material.dart';
 
 class AppRoutes {
@@ -46,7 +47,12 @@ class AppRoutes {
         route: 'inputs',
         name: 'Text Inputs & Forms',
         screen: const InputsScreen(),
-        icon: Icons.input)
+        icon: Icons.input),
+    MenuOption(
+        route: 'slider',
+        name: 'Slider',
+        screen: const SliderScreen(),
+        icon: Icons.slideshow_rounded)
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
